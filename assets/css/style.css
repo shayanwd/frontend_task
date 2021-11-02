@@ -1,0 +1,492 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Inter", sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .m-show {
+        display: none;
+    }
+    /* scroll bar styling start */
+    
+     ::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background: #3d3e3e;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #13ae8d;
+        border-radius: 10px;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    /* scroll bar styling end */
+    /* \\\\\\\\\\\\\\\\
+    header start
+    \\\\\\\\\\\\\\\\\
+     */
+    
+    .header {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        position: fixed;
+        top: 0;
+        z-index: 9;
+    }
+    
+    .white-header {
+        background: white;
+        transition: 0.2s;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid rgb(245, 245, 245);
+    }
+    
+    .navbar img.logo {
+        max-width: 160px;
+        width: 100%;
+    }
+    
+    .nav-item .nav-link {
+        color: #000000 !important;
+        opacity: 0.5;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        transition: 0.2s;
+        position: relative;
+    }
+    
+    .nav-item:hover .nav-link {
+        color: #000000 !important;
+        opacity: 1;
+    }
+    
+    .nav-item .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        margin: 0 auto;
+        height: 2px;
+        background: #13ae8d;
+        transition: 0.2s;
+    }
+    
+    .navbar-nav .nav-item {
+        margin-right: 15px;
+    }
+    
+    .navbar-nav .nav-item:last-child {
+        margin-right: 0;
+    }
+    
+    .nav-item .nav-link:hover::before {
+        width: 88%;
+    }
+    
+    .nav-item.active .nav-link {
+        color: #000000 !important;
+        opacity: 1;
+    }
+    
+    .nav-item.active .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 88%;
+        margin: 0 auto;
+        height: 2px;
+        background: #13ae8d;
+        transition: 0.2s;
+    }
+    
+    .nav-item.dropdown .nav-link i {
+        margin-left: 5px;
+        transition: 0.2s;
+    }
+    
+    .nav-item.dropdown.show .nav-link i {
+        transform: rotate(-180deg);
+        color: #13ae8d;
+    }
+    
+    .dropdown-menu.cus-dropdown {
+        border: none;
+        background: white;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .dropdown-menu.cus-dropdown .dropdown-item {
+        opacity: 0.5;
+        font-weight: 600;
+        font-size: 16px;
+        color: #000000;
+    }
+    
+    .dropdown-menu.cus-dropdown .dropdown-item:focus,
+    .dropdown-item:hover {
+        background: none;
+        opacity: 1 !important;
+    }
+    
+    .mobile-header {
+        width: 100%;
+    }
+    
+    .hamburger img {
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background-color: #13AE8D;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn i {
+        color: black;
+        font-size: 18px;
+    }
+    
+    .sid-nav-header {
+        width: 100%;
+    }
+    
+    .sid-nav-header ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .sid-nav-header ul p {
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    
+    .main-side-nav-content {
+        padding: 40px 20px;
+    }
+    
+    .sid-nav-header ul li {
+        list-style: none;
+    }
+    
+    .sid-nav-header {
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    /* \\\\\\\\\\\\\\\\
+    header end
+    \\\\\\\\\\\\\\\\\
+     */
+    /* \\\\\\\\\\\\\
+     banner start
+     \\\\\\\\\\\\ */
+    
+    .banner-sec {
+        width: 100%;
+        padding: 200px 0 160px 0;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        background-size: contain;
+        background-image: url(../images/banner-bg.png);
+        overflow: hidden;
+    }
+    
+    .banner-top-right-shape {
+        width: 25%;
+        position: absolute;
+        right: 0;
+        object-fit: cover;
+        top: 10%;
+        pointer-events: none;
+    }
+    
+    .banner-top-left-shape {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        display: none;
+        pointer-events: none;
+    }
+    
+    .banner-bottom-let-shape {
+        width: 55px;
+        position: absolute;
+        bottom: 10%;
+        pointer-events: none;
+        left: 0;
+        object-fit: contain;
+    }
+    
+    .banner-content {
+        width: 100%;
+    }
+    
+    .banner-content h1 {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 74px;
+        color: #000000;
+    }
+    
+    .banner-content h1 span {
+        color: #13ae8d;
+    }
+    
+    .banner-content p {
+        color: #000000;
+        opacity: 0.6;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .banner-content a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #13ae8d;
+        text-decoration: none;
+        display: block;
+        width: fit-content;
+        padding: 10px;
+        border: 2px solid #13ae8d;
+        border-radius: 8px;
+        transition: 0.2s;
+    }
+    
+    .banner-content a:hover {
+        background: #13ae8d;
+        color: white;
+    }
+    
+    .banner-image {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .banner-image img {
+        width: 100%;
+        transition: 0.2s;
+    }
+    /* \\\\\\\\\\\\\
+     banner end
+     \\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\
+ big data companies start 
+ \\\\\\\\\\\\\\\\\\\\\\\\ */
+    
+    .big-data-sec {
+        width: 100%;
+        padding: 60px 0;
+        background-color: #06090f;
+        background-image: url(../images/big-data-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .big-data-companies-content {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .big-data-companies-content h6 {
+        font-weight: 800;
+        font-size: 24px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.75;
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto 30px auto;
+    }
+    
+    .big-data-companies-content h4 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        color: #13ae8d;
+    }
+    
+    .big-data-companies-content ul {
+        max-width: 500px;
+        width: 100%;
+        margin: 60px auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+    
+    .big-data-companies-content ul li {
+        list-style: none;
+    }
+    
+    .big-data-companies-content ul li img {
+        width: 100%;
+    }
+    /* \\\\\\\\\\\\\\\\\\\\\\\\
+ big data companies end 
+ \\\\\\\\\\\\\\\\\\\\\\\\ */
+    /* \\\\\\\\\\\\\\\\\\\\\\\\
+ world class services start
+ \\\\\\\\\\\\\\\\\\\\\\\\ */
+    
+    .world-class-sec {
+        width: 100%;
+        padding: 80px 0;
+    }
+    
+    .world-class-content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .world-class-content h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    
+    .world-class-content p {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px;
+        /* or 120% */
+        text-align: center;
+        color: #808080;
+        margin: 0;
+    }
+    
+    .world-class-content p b {
+        color: #000000;
+    }
+    
+    .world-class-content span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #808080;
+    }
+    
+    .world-class-content span a {
+        text-decoration: underline;
+        color: #13ae8d;
+        font-weight: 600;
+    }
+    
+    .world-class-boxes-container {
+        width: 100%;
+        margin: 80px 0 20px 0;
+        position: relative;
+    }
+    
+    .gray-disc1 {
+        position: absolute;
+        right: 0;
+        width: 5%;
+        top: 0;
+    }
+    
+    .gray-disc2 {
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+        width: 5%;
+    }
+    
+    .world-class-box-content {
+        width: 100%;
+    }
+    
+    .world-class-box-content {
+        max-width: 450px;
+        width: 100%;
+    }
+    
+    .world-class-box-content.right {
+        margin-left: auto;
+    }
+    
+    .world-class-box-content h3 {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+        color: #000000;
+    }
+    
+    .world-class-box-content p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    
+    .world-class-box-content a {
+        font-weight: 900;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        text-decoration-line: underline;
+        color: #13AE8D;
+    }
+    
+    .world-class-box-image {
+        width: 100%;
+    }
+    
+    .middle-row {
+        margin: 60px 0;
+    }
+    
+    .world-class-box-image img {
+        width: 100%;
+        object-fit: contain;
+    }
+    /* \\\\\\\\\\\\\\\\\\\\\\\\
+ world class services end
+ \\\\\\\\\\\\\\\\\\\\\\\\ */
