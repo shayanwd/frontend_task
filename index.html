@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple insight</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+</head>
+
+<body>
+
+
+    <!-- side navigation start  -->
+
+
+    <div id="mySidenav" class="sidenav">
+
+        <div class="main-side-nav-content">
+
+            <div class="sid-nav-header">
+                <ul>
+                    <li>
+                        <p>MENU</p>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                            <i class="fas fa-times"></i>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#">HOME</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
+                    INDUSTRIES <i class="fas fa-chevron-down"></i>
+                </a>
+                    <div class="dropdown-menu cus-dropdown">
+                        <a class="dropdown-item" href="#">Technology and Software</a>
+                        <a class="dropdown-item" href="#"> Consumer Products and Insights</a>
+                        <a class="dropdown-item" href="#"> Marketing and Ad-Ops</a>
+                        <a class="dropdown-item" href="#"> E-Commerce</a>
+                        <a class="dropdown-item" href="#"> HR and Recruiting</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- side navigation end -->
+
+
+
+    <!-- header start -->
+
+    <header class="header">
+        <div class="container">
+
+            <!-- desktop-navigation start -->
+            <nav class="navbar navbar-expand-md navbar-dark d-show">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="assets/images/logo.svg">
+                </a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="#">HOME</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
+                                INDUSTRIES <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu cus-dropdown">
+                                <a class="dropdown-item" href="#">Technology and Software</a>
+                                <a class="dropdown-item" href="#"> Consumer Products and Insights</a>
+                                <a class="dropdown-item" href="#"> Marketing and Ad-Ops</a>
+                                <a class="dropdown-item" href="#"> E-Commerce</a>
+                                <a class="dropdown-item" href="#"> HR and Recruiting</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- desktop-navigation end -->
+            <!-- mobile-navigation start -->
+
+            <div class="mobile-header m-show">
+                <div class="hamburger">
+                    <img onclick="openNav()" src="assets/images/hamburger.png">
+                </div>
+            </div>
+
+            <!-- mobile-navigation end -->
+
+        </div>
+    </header>
+
+    <!-- header end -->
+
+
+    <!-- banner-start -->
+
+    <section class="banner-sec" id="layer">
+        <img class="banner-top-right-shape wow fadeIn" src="assets/images/zig-shape.png">
+        <img class="banner-top-left-shape wow fadeIn" src="assets/images/round-shape.png">
+        <div class="container">
+            <div class="row revers-on-mob align-items-center">
+                <div class="col-md-6">
+                    <div class="banner-content wow fadeIn">
+                        <h1>Helping you <span>scale</span> with <span>data</span></h1>
+                        <p>We bring your ideas and data to life with data science, machine learning, and artificial intelligence. We help top companies build and deploy custom analytics solutions.</p>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-image wow fadeInUp">
+                        <img id="object1" src="assets/images/banner-img.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img class="banner-bottom-let-shape wow fadeIn" src="assets/images/disc-shap.png">
+    </section>
+
+    <!-- banner-start -->
+
+    <!-- big data companies start -->
+
+    <section class="big-data-sec">
+        <div class="container">
+            <div class="big-data-companies-content wow fadeIn">
+                <h6>Apple Insight Named in 2020 Clutch Leaders MatriX for Data Analytics </h6>
+                <h4>Top 3 Big Data Companies in Canada</h4>
+                <ul>
+                    <li>
+                        <img src="assets/images/clutch1.png">
+                    </li>
+                    <li>
+                        <img src="assets/images/clutch2.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- big data companies end -->
+
+    <!-- world class services start -->
+
+
+    <section class="world-class-sec">
+
+        <div class="container">
+            <div class="world-class-content wow fadeInUp">
+                <h2>World-Class Services</h2>
+                <p>We are a team of world-class data scientists and engineers who have helped top companies like
+                    <b>Facebook, Google, Uber, Amazon, Microsoft</b> and others solve some of their hardest problems.
+                </p>
+                <span>Learn More <a href="#"> About Our Services </a></span>
+            </div>
+
+        </div>
+
+        <div class="world-class-boxes-container ">
+            <img class="gray-disc1" src="assets/images/gray-disc1.png">
+            <div class="container">
+
+                <div class="row align-items-center revers-on-mob">
+                    <div class="col-md-6">
+                        <div class="world-class-box-content  wow fadeIn">
+                            <h3>AI and Machine Learning Products</h3>
+                            <p>We’ve created some of the leading AI products on the market today. We help plan, architect and create practical and scalable AI.
+                            </p>
+                            <p>
+                                We help bring your product vision to life.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="world-class-box-image wow fadeInUp">
+                            <img src="assets/images/world-class-1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center middle-row ">
+                    <div class="col-md-6 ">
+                        <div class="world-class-box-image wow fadeInUp">
+                            <img src="assets/images/world-class-2.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="world-class-box-content right wow fadeIn">
+                            <h3>Data Science & Analytics</h3>
+                            <p>
+                                We’ve helped innovative organizations of all sizes — from startups to Fortune 500s — build analytics solutions.
+                            </p>
+                            <p>
+                                We help our customers acquire, clean, organize, connect and leverage data so that they can make informed business decisions.
+                            </p>
+                            <p>
+                                We help give your data a voice.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center revers-on-mob">
+                    <div class="col-md-6">
+                        <div class="world-class-box-content wow fadeIn">
+                            <h3>Data Engineering and Architecture</h3>
+                            <p>
+                                We can help you scale your data infrastructure to handle more complex processes or high volume transactions.
+                            </p>
+                            <p>
+                                We provide guidance and implementation for complex data and infrastructure. At the same time, we help you optimize for the cost of maintaining high performance systems.
+                            </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="world-class-box-image wow fadeInUp">
+                            <img src="assets/images/world-class-3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="gray-disc2" src="assets/images/gray-disc2.png">
+        </div>
+
+    </section>
+
+
+
+    <!-- world class services start -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "290px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/c5e5090d10.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
