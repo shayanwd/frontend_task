@@ -6,3 +6,4 @@
 4. Use bootstrap 4
 5. CSS should be clean, not using inline style CSS but proper classes
 6. deploy site using visual studio code https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer for project manager to see
+.
